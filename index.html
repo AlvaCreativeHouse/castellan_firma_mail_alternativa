@@ -182,14 +182,14 @@
 
     <script type="text/javascript">
         function cambiarImagen() {
-            let logo = document.getElementById("contenedor").getElementsByTagName("img")[0].src;
-            if(logo.includes('castellan logo 2025 con bajada.png')) {
-                document.getElementById("contenedor").getElementsByTagName("img")[0].src = "castellan logo 2025 con bajada.png";
-            } else {
-                document.getElementById("contenedor").getElementsByTagName("img")[0].src = "castellan_logo__.png";
-            }
-            
-        }
+    let logo = document.getElementById("contenedor").getElementsByTagName("img")[0];
+    if (logo.src.includes("castellan_logo__.png")) {
+        logo.src = "castellan logo 2025 con bajada.png";
+    } else {
+        logo.src = "castellan_logo__.png";
+    }
+}
+
 
         function copiarFirma() {
 
